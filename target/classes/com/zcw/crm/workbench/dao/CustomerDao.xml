@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.zcw.crm.workbench.dao.CustomerDao">
+
+    <select id="getCustomerName" resultType="String">
+        select name from tbl_customer where name like '%' #{name} '%'
+    </select>
+
+    <select id="getCustomerByName" resultType="com.zcw.crm.workbench.domain.Customer">
+        select * from tbl_customer where name = #{company}
+    </select>
+
+    <insert id="save">
+        insert into tbl_customer(
+            id,
+            address,
+            website,
+            phone,
+            owner,
+            nextContactTime,
+            name,
+            description,
+            createTime,
+            createBy,
+            contactSummary
+        )
+        values(
+             #{id},
+             #{address},
+             #{website},
+             #{phone},
+             #{owner},
+             #{nextContactTime},
+             #{name},
+             #{description},
+             #{createTime},
+             #{createBy},
+             #{contactSummary}
+        )
+
+
+    </insert>
+	
+  	
+</mapper>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

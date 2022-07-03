@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.zcw.crm.workbench.dao.ContactsDao">
+
+    <select id="searchContactsByFullname" resultType="com.zcw.crm.workbench.domain.Contacts">
+        select * from tbl_contacts where fullname like '%' #{funllname} '%'
+    </select>
+
+    <insert id="save">
+        insert into tbl_contacts(
+            id ,
+            source,
+            owner,
+            nextContactTime,
+            mphone,
+            job,
+            birth,
+            fullname,
+            email,
+            description,
+            customerId,
+            createTime,
+            createBy,
+            contactSummary,
+            appellation
+        )
+        values (
+            #{id},
+            #{source},
+            #{owner},
+            #{nextContactTime},
+            #{mphone},
+            #{job},
+            #{birth},
+            #{fullname},
+            #{email},
+            #{description},
+            #{customerId},
+            #{createTime},
+            #{createBy},
+            #{contactSummary},
+            #{appellation}
+        )
+    </insert>
+	
+  	
+</mapper>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
