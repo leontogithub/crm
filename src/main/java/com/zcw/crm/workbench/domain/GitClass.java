@@ -4,9 +4,7 @@ public class GitClass {
 
     private String id;
     private String name;
-    private Integer i;
-
-    private Double d;
+    private Integer in;
 
 
 }
