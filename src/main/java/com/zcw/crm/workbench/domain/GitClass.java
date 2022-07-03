@@ -6,6 +6,8 @@ public class GitClass {
     private String name;
     private Integer age;
 
+    private double d = 2.0;
+
     public GitClass() {
     }
 
