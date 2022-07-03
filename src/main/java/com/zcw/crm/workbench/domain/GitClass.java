@@ -4,7 +4,7 @@ public class GitClass {
 
     private String id;
     private String name;
-    private Integer sex;
+    private Integer i;
 
 
 
