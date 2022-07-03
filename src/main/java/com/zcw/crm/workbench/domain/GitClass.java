@@ -17,4 +17,8 @@ public class GitClass {
         this.name = name;
         this.age = age;
     }
+
+    private final double AP = 3.14;
+
+
 }
