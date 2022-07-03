@@ -6,6 +6,7 @@ public class GitClass {
     private String name;
     private Integer sex;
 
+    private Double d;
 
 
 }
